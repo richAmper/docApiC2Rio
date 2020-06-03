@@ -1,0 +1,182 @@
+openapi: 3.0.0
+info:
+  title: supplierSite
+  version: '1.0'
+servers:
+  - url: 'https://c2.tours'
+paths:
+  /subSupplier:
+    post:
+      summary: ''
+      operationId: post-subSupplier
+      responses:
+        '200':
+          description: OK
+          content:
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  msg:
+                    type: string
+              examples:
+                example-1:
+                  value:
+                    status: Success
+                    msg: Solicitação enviado com sucesso
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                activites:
+                  type: array
+                  description: Array que recebe os tipos de atividades
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                      name:
+                        type: string
+                    required:
+                      - id
+                      - name
+                place:
+                  type: string
+                  description: Local da ativiadade
+                socialMedia:
+                  type: object
+                  description: |
+                    Recebe os tipos de redes sociais que a empresa possui e seus endereços
+                  required:
+                    - site
+                    - instagram
+                    - tripadvisor
+                  properties:
+                    site:
+                      type: string
+                      description: Recebe o Site da empresa
+                    instagram:
+                      type: string
+                      description: Recebe o Instagram da empresa
+                    tripadvisor:
+                      type: string
+                      description: Recebe o TripAdvisor da Empresa
+                managingDdirector:
+                  type: object
+                  description: Recebe os dados do Diretor Geral
+                  required:
+                    - firstName
+                    - lastName
+                  properties:
+                    firstName:
+                      type: string
+                      description: Primeiro Nome do Diretor Geral
+                    lastName:
+                      type: string
+                      description: Sobrenome do Diretor Geral
+                company:
+                  type: object
+                  description: Recebe dados da Empresa
+                  required:
+                    - nameCompany
+                    - zipCode
+                    - city
+                    - address
+                    - country
+                    - currency
+                  properties:
+                    nameCompany:
+                      type: string
+                      description: Recebe o nome da Empresa
+                    zipCode:
+                      type: string
+                      description: Recebe o CEP da empresa
+                    city:
+                      type: string
+                      description: Recebe a Cidade da Empresa
+                    address:
+                      type: string
+                      description: Recebe o endereço da Empresa
+                    country:
+                      type: string
+                      description: Recebe o país da Empresa
+                    currency:
+                      type: string
+                      description: Recebe a moeda da Empresa
+                contact:
+                  type: object
+                  description: Recebe o contato da empresa
+                  required:
+                    - firstNameContact
+                    - lastNameContact
+                    - phoneNumberContact
+                  properties:
+                    firstNameContact:
+                      type: string
+                      description: Recebe o primeiro nome do contato da empresa
+                    lastNameContact:
+                      type: string
+                      description: Recebe o sobrenome do contato da empresa
+                    phoneNumberContact:
+                      type: string
+                      description: Recebe o telefone do contato da empresa
+                login:
+                  type: object
+                  description: Recebe as informações de Login
+                  required:
+                    - email
+                    - password
+                  properties:
+                    email:
+                      type: string
+                      description: Recebe o e-mail para Login
+                    password:
+                      type: string
+                      description: Recebe a senha para Login
+              required:
+                - activites
+                - place
+                - socialMedia
+                - managingDdirector
+                - company
+                - contact
+                - login
+            examples:
+              example-1:
+                value:
+                  activites:
+                    - id: 39
+                      name: Ingressos para atrações
+                  place: 'Rio de Janeiro, RJ, Brasil'
+                  socialMedia:
+                    site: 'https://www.ampercomunicacao.com.br'
+                    instagram: '@ampercomunicacao'
+                    tripadvisor: 'https://www.tripadvisor.com.br/Attraction_Review-g303506-d9555526-Reviews-C2Rio_Tours_Travel-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html'
+                  managingDdirector:
+                    firstName: Richard
+                    lastName: Salles
+                  company:
+                    nameCompany: Amper Comunicação
+                    zipCode: '24020104'
+                    city: Niterói
+                    address: Rua José Clemente
+                    country: Brasil
+                    currency: Real Brasileiro
+                  contact:
+                    firstNameContact: Richard
+                    lastNameContact: Salles
+                    phoneNumberContact: '55999999999'
+                  login:
+                    email: richard@ampercomunicacao.com.br
+                    password: amper
+        description: ''
+      parameters: []
+      description: ''
+    parameters: []
+components:
+  schemas: {}
