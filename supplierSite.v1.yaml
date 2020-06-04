@@ -180,7 +180,7 @@ paths:
     parameters: []
   /getSupplierReservations:
     get:
-      summary: Your GET endpoint
+      summary: Get infos to suppliers dashboard
       tags: []
       responses: {}
       operationId: get-getSupplierReservations
