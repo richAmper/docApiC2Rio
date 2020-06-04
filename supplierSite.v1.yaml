@@ -7,7 +7,7 @@ servers:
 paths:
   /subSupplier:
     post:
-      summary: ''
+      summary: Create Supplier
       operationId: post-subSupplier
       responses:
         '200':
