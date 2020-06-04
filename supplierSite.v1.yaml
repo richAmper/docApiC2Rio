@@ -178,5 +178,106 @@ paths:
       parameters: []
       description: ''
     parameters: []
+  /getSupplierReservations:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-getSupplierReservations
+      description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                AllSuppliersReservations:
+                  type: array
+                  description: 'Array de objetos contendo todas as reservas do fornecedor. Período: 30 dias antes da data atual até 5 dias após'
+                  items:
+                    type: object
+                    properties:
+                      tour_name:
+                        type: string
+                        description: Nome do tour ao qual a reserva corresponde
+                      tour_date:
+                        type: string
+                        description: Data do tour
+                      tour_hour:
+                        type: string
+                        description: Hora do tour
+                      passengers:
+                        type: number
+                        description: Quantidade de passageiros na reserva
+                      passenger_name:
+                        type: string
+                        description: Nome do passageiro responsável pela reserva
+                      passenger_tel:
+                        type: string
+                        description: Telefone do passageiro
+                      total_price:
+                        type: string
+                        description: Valor total da reserva
+                      status:
+                        type: number
+                        description: Check-in ou no-show
+                    required:
+                      - tour_name
+                      - tour_date
+                      - tour_hour
+                      - passengers
+                      - total_price
+                      - status
+                tourReservations:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      start_date:
+                        type: string
+                      end_date:
+                        type: string
+                      tours:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            tour_name:
+                              type: string
+                            tour_code:
+                              type: string
+                            tickets:
+                              type: number
+                            pax:
+                              type: number
+                            bruto:
+                              type: number
+                            liquido:
+                              type: number
+                          required:
+                            - tour_name
+                            - tour_code
+                            - tickets
+                            - pax
+                            - bruto
+                            - liquido
+                    required:
+                      - start_date
+                      - end_date
+                faturamentopordia:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      date:
+                        type: string
+                      reservations:
+                        type: number
+                      reservations_total:
+                        type: number
+                    required:
+                      - date
+                      - reservations
+                      - reservations_total
 components:
   schemas: {}
