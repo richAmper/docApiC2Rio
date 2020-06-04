@@ -181,10 +181,14 @@ paths:
   /getSupplierReservations:
     get:
       summary: Get infos to suppliers dashboard
-      tags: []
-      responses: {}
+      tags:
+        - suppliers
+        - reservations
+      responses:
+        '200':
+          description: OK
       operationId: get-getSupplierReservations
-      description: ''
+      description: Get infos to suppliers dashboard
       requestBody:
         content:
           application/json:
@@ -197,87 +201,106 @@ paths:
                   items:
                     type: object
                     properties:
-                      tour_name:
+                      tourName:
                         type: string
                         description: Nome do tour ao qual a reserva corresponde
-                      tour_date:
+                      tourDate:
                         type: string
                         description: Data do tour
-                      tour_hour:
+                      tourHour:
                         type: string
                         description: Hora do tour
                       passengers:
                         type: number
                         description: Quantidade de passageiros na reserva
-                      passenger_name:
+                      passengerName:
                         type: string
                         description: Nome do passageiro responsável pela reserva
-                      passenger_tel:
+                      passengerTel:
                         type: string
                         description: Telefone do passageiro
-                      total_price:
+                      totalPrice:
                         type: string
                         description: Valor total da reserva
                       status:
                         type: number
-                        description: Check-in ou no-show
+                        description: 1 para Check-in ou 0 para no-show
                     required:
-                      - tour_name
-                      - tour_date
-                      - tour_hour
+                      - tourName
+                      - tourDate
+                      - tourHour
                       - passengers
-                      - total_price
+                      - totalPrice
                       - status
                 tourReservations:
                   type: array
                   items:
                     type: object
+                    description: Objeto com informações de reservas classificadas por tours
                     properties:
-                      start_date:
+                      startDate:
                         type: string
-                      end_date:
+                        description: Data de início do período ao qual as medidas se referem
+                      endDate:
                         type: string
+                        description: Data do fim do período ao qual as medidas se referem
                       tours:
                         type: array
+                        description: Informações por tour
                         items:
                           type: object
                           properties:
-                            tour_name:
+                            tourName:
                               type: string
-                            tour_code:
+                              description: Nome do tour
+                            tourCode:
                               type: string
+                              description: Código do tour
                             tickets:
                               type: number
+                              description: Número de tickets vendidos no período
                             pax:
                               type: number
+                              description: 'Números de passageiros que adquiriram o ticket, considerando que cada ticket pode corresponder a mais de um passageiro'
                             bruto:
                               type: number
+                              description: Ganhos brutos com a venda de tickets deste tour neste período
                             liquido:
                               type: number
+                              description: Ganhos líquidos com a venda de tickets deste tour neste período
                           required:
-                            - tour_name
-                            - tour_code
+                            - tourName
+                            - tourCode
                             - tickets
                             - pax
                             - bruto
                             - liquido
                     required:
-                      - start_date
-                      - end_date
+                      - startDate
+                      - endDate
+                      - tours
                 faturamentopordia:
                   type: array
+                  description: Faturamento do fornecedor calculado por dia; retornaria apenas dias de um período de 60 dias.
                   items:
                     type: object
                     properties:
                       date:
                         type: string
+                        description: Data do dia ao qual o faturamente corresponde
                       reservations:
                         type: number
-                      reservations_total:
+                        description: Número de reservas
+                      reservationsTotal:
                         type: number
+                        description: Faturamento do dia
                     required:
                       - date
                       - reservations
-                      - reservations_total
+                      - reservationsTotal
+              required:
+                - AllSuppliersReservations
+                - tourReservations
+                - faturamentopordia
 components:
   schemas: {}
