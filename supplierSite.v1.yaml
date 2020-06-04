@@ -7,7 +7,7 @@ servers:
 paths:
   /subSupplier:
     post:
-      summary: ''
+      summary: Inscrição de Fornecedor
       operationId: post-subSupplier
       responses:
         '200':
