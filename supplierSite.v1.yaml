@@ -210,7 +210,7 @@ paths:
                       tourHour:
                         type: string
                         description: Hora do tour
-                      passengers:
+                      pax:
                         type: number
                         description: Quantidade de passageiros na reserva
                       passengerName:
@@ -229,7 +229,7 @@ paths:
                       - tourName
                       - tourDate
                       - tourHour
-                      - passengers
+                      - pax
                       - totalPrice
                       - status
                 tourReservations:
@@ -262,10 +262,10 @@ paths:
                             pax:
                               type: number
                               description: 'Números de passageiros que adquiriram o ticket, considerando que cada ticket pode corresponder a mais de um passageiro'
-                            bruto:
+                            grossValue:
                               type: number
                               description: Ganhos brutos com a venda de tickets deste tour neste período
-                            liquido:
+                            netValue:
                               type: number
                               description: Ganhos líquidos com a venda de tickets deste tour neste período
                           required:
@@ -273,13 +273,13 @@ paths:
                             - tourCode
                             - tickets
                             - pax
-                            - bruto
-                            - liquido
+                            - grossValue
+                            - netValue
                     required:
                       - startDate
                       - endDate
                       - tours
-                faturamentopordia:
+                invoincingSales:
                   type: array
                   description: Faturamento do fornecedor calculado por dia; retornaria apenas dias de um período de 60 dias.
                   items:
@@ -291,16 +291,16 @@ paths:
                       reservations:
                         type: number
                         description: Número de reservas
-                      reservationsTotal:
+                      dayInvoincing:
                         type: number
                         description: Faturamento do dia
                     required:
                       - date
                       - reservations
-                      - reservationsTotal
+                      - dayInvoincing
               required:
                 - AllSuppliersReservations
                 - tourReservations
-                - faturamentopordia
+                - invoincingSales
 components:
   schemas: {}
