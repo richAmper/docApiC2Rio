@@ -302,5 +302,304 @@ paths:
                 - AllSuppliersReservations
                 - tourReservations
                 - faturamentopordia
+  /insertTicketProduct:
+    parameters: []
+    post:
+      summary: Insert Ticket Product
+      operationId: post-insertTicketProduct
+      responses:
+        '200':
+          description: OK
+      description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ticketSupplyType:
+                  type: number
+                ticketNameBR:
+                  type: string
+                ticketNameEN:
+                  type: string
+                ticketNameES:
+                  type: string
+                ticketInfoBR:
+                  type: string
+                ticketInfoEN:
+                  type: string
+                ticketInfoES:
+                  type: string
+                ticketDescriptionBR:
+                  type: string
+                ticketDescriptionEN:
+                  type: string
+                ticketDescriptionES:
+                  type: string
+                eventLocation:
+                  type: string
+                eventAddress:
+                  type: string
+                minAge:
+                  type: number
+                refundRule:
+                  type: number
+                refundingRules:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      days:
+                        type: string
+                      ticketPolicy:
+                        type: string
+                      percentage:
+                        type: number
+                ticket_modalities:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      referenceCodeBR:
+                        type: string
+                      referenceCodeEN:
+                        type: string
+                      referenceCodeES:
+                        type: string
+                      modalityNameBR:
+                        type: string
+                      modalityNameEN:
+                        type: string
+                      modalityNameES:
+                        type: string
+                      modalityDescriptionBR:
+                        type: string
+                      modalityDescriptionEN:
+                        type: string
+                      modalityDescriptionES:
+                        type: string
+                      eventDurationDays:
+                        type: number
+                      eventDurationHours:
+                        type: number
+                      eventDurationMinuties:
+                        type: number
+                      ' activityStartTime':
+                        type: string
+                      ' buyingAdvanceHours':
+                        type: number
+                      ticketWithdrawal:
+                        type: number
+                      ticketWithdrawalInformation:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            withdrawalAddress:
+                              type: string
+                            withdrawalLatitude:
+                              type: string
+                            withdrawalLongitude:
+                              type: string
+                      offerTransportation:
+                        type: number
+                      meetingPointLocation:
+                        type: string
+                      pickupLocationId:
+                        type: number
+                      wheelchairAccessibility:
+                        type: number
+                      audioGuideBR:
+                        type: string
+                      audioGuideEN:
+                        type: string
+                      audioGuideES:
+                        type: string
+                      bookletBR:
+                        type: string
+                      bookletEN:
+                        type: string
+                      bookletES:
+                        type: string
+                      lineDetail:
+                        type: string
+                      validationType:
+                        type: string
+                      validationPeriodDays:
+                        type: string
+                      validationPeriodHours:
+                        type: string
+                      validationPeriodMinuties:
+                        type: string
+                      validationDefinedDate:
+                        type: string
+                      items_included:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            ' item':
+                              type: string
+                            lang:
+                              type: string
+                      items_not_included:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            item:
+                              type: string
+                            lang:
+                              type: string
+                      ticketSellingType:
+                        type: string
+                      fixedGlobalTariff:
+                        type: string
+                      dom:
+                        type: string
+                      seg:
+                        type: string
+                      ter:
+                        type: string
+                      qua:
+                        type: string
+                      qui:
+                        type: string
+                      sex:
+                        type: string
+                      sab:
+                        type: string
+                      ticket_mod_tariff:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            tariffName:
+                              type: string
+                            tariffStart:
+                              type: string
+                            tariffEnd:
+                              type: string
+                            ticketDailyTariff:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  dom:
+                                    type: string
+                                  seg:
+                                    type: string
+                                  ter:
+                                    type: string
+                                  qua:
+                                    type: string
+                                  qui:
+                                    type: string
+                                  sex:
+                                    type: string
+                                  sab:
+                                    type: string
+                                  infantCostTariff:
+                                    type: string
+                                  infantNetTariff:
+                                    type: string
+                                  infantSellingTariff:
+                                    type: string
+                                  childCostTariff:
+                                    type: string
+                                  childNetTariff:
+                                    type: string
+                                  childSellingTariff:
+                                    type: string
+                                  adultCostTariff:
+                                    type: string
+                                  adultNetTariff:
+                                    type: string
+                                  adultSellingTariff:
+                                    type: string
+                                  studentCostTariff:
+                                    type: string
+                                  studentNetTariff:
+                                    type: string
+                                  studentSellingTariff:
+                                    type: string
+                                  eldersCostTariff:
+                                    type: string
+                                  eldersNetTariff:
+                                    type: string
+                                  eldersSellingTariff:
+                                    type: string
+                                  globalCostTariff:
+                                    type: string
+                                  globalNetTariff:
+                                    type: string
+                                  globalSellingTariff:
+                                    type: string
+                            hourlyPromotions:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  startTime:
+                                    type: string
+                                  endTime:
+                                    type: string
+                                  percentage:
+                                    type: string
+                                  dom:
+                                    type: string
+                                  seg:
+                                    type: string
+                                  ter:
+                                    type: string
+                                  qua:
+                                    type: string
+                                  qui:
+                                    type: string
+                                  sex:
+                                    type: string
+                                  sab:
+                                    type: string
+                            buyingAdvancePromotions:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  vacancyAvailable:
+                                    type: string
+                                  percentage:
+                                    type: string
+                                  daysAdvance:
+                                    type: string
+                                  dom:
+                                    type: string
+                                  seg:
+                                    type: string
+                                  ter:
+                                    type: string
+                                  qua:
+                                    type: string
+                                  qui:
+                                    type: string
+                                  sex:
+                                    type: string
+                                  sab:
+                                    type: string
+            examples:
+              example-1: {}
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: _token
+        - schema:
+            type: string
+          in: header
+          name: supplierIdentity
+        - schema:
+            type: string
+          in: header
+          name: jsonData
 components:
   schemas: {}
