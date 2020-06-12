@@ -302,5 +302,351 @@ paths:
                 - AllSuppliersReservations
                 - tourReservations
                 - invoincingSales
+            examples:
+              Exemplo de como é o objeto do gráfico: {}
+              'Objeto de exemplo que estou usando em /main-dashboar (exceto pelo gráfico, que são os dados do outro exemplo)':
+                value:
+                  AllSuppliersReservations:
+                    - tourName: Um dia no Rio
+                      tourDate: '2020-06-12'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Isis Leal
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Meio dia no Rio
+                      tourDate: '2020-06-12'
+                      tourHour: '12:00'
+                      pax: 2
+                      passengerName: Richard
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Um dia em Búzios
+                      tourDate: '2020-06-12'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: 'Santa Teresa, Lapa e Cinelândia'
+                      tourDate: '2020-06-12'
+                      tourHour: '10:00'
+                      pax: 2
+                      passengerName: Isis
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: um dia no rio
+                      tourDate: '2020-06-12'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Isis Leal
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: um dia no rio
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Isis Leal
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Pão de Açucar com Ingresso
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Isis Leal
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: 'Rio: Corcovado, Cristo Redentor'
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Isis
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Angra dos Reis
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Richard
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-12'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-12'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-09'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-09'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-09'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-09'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-09'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-10'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-11'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                    - tourName: Ilha Grande Histórica
+                      tourDate: '2020-06-13'
+                      tourHour: '08:00'
+                      pax: 2
+                      passengerName: Rafael
+                      passengerTel: '21999999999'
+                      totalPrice: 300
+                      status: 1
+                  tourReservations:
+                    startDate: '2020-06-03'
+                    endDate: '2020-07-03'
+                    tours:
+                      - tourName: 'Rio: Corcovado, Cristo Redentor e praia de Copacabana'
+                        tourCode: pqy2760
+                        tickets: '100'
+                        pax: '150'
+                        grossValue: '30000'
+                        netValue: '20000'
+                      - tourName: Pão de Açucar com Ingresso e vista panoramica
+                        tourCode: pqn8204
+                        tickets: '100'
+                        pax: '150'
+                        grossValue: '30000'
+                        netValue: '20000'
+                      - tourName: Cristo Redentor
+                        tourCode: p029383
+                        tickets: '100'
+                        pax: '150'
+                        grossValue: '30000'
+                        netValue: '20000'
+                      - tourName: Um dia no Rio
+                        tourCode: pqy2760
+                        tickets: 300
+                        pax: '100'
+                        grossValue: '30000'
+                        netValue: '20000'
+                      - tourName: 'Santa Teresa, Lapa e Cinelândia com Passeio de Bondinho e Escadaria Selarón'
+                        tourCode: pq9ksa
+                        tickets: '90'
+                        pax: '150'
+                        grossValue: '30000'
+                        netValue: '20000'
+                      - tourName: 'Passeio de Helicóptero & Voo Panorâmico - Rio de Janeiro'
+                        tourCode: pqy2760
+                        tickets: '10'
+                        pax: '15'
+                        grossValue: '30000'
+                        netValue: '20000'
+                      - tourName: The Hidden Gem Across Rio de Janeiro
+                        tourCode: pqy2760
+                        tickets: '100'
+                        pax: '120'
+                        grossValue: '40000'
+                        netValue: '20000'
+                      - tourName: 'Christ the Redeemer, Sugar Loaf, Maracana and Selaron with Lunch'
+                        tourCode: pqy2760
+                        tickets: '100'
+                        pax: '150'
+                        grossValue: '50000'
+                        netValue: '20000'
+                      - tourName: Recebiveis de venda
+                        tourCode: pqy2760
+                        tickets: '100'
+                        pax: '150'
+                        grossValue: '30000'
+                        netValue: '20000'
+                      - tourName: 'Full Day in Rio: Christ the Redeemer, Sugar Loaf, Maracana and Selaron with Lunch'
+                        tourCode: pqy2760
+                        tickets: '100'
+                        pax: '150'
+                        grossValue: '30000'
+                        netValue: '20000'
+                  invoincingSales:
+                    - date: '2020-06-03'
+                      reservations: 10
+                      dayInvoincing: 10000
+                    - date: '2020-06-04'
+                      reservations: 11
+                      dayInvoincing: 11000
+                    - date: '2020-06-05'
+                      reservations: 12
+                      dayInvoincing: 12000
+                    - date: '2020-06-06'
+                      reservations: 13
+                      dayInvoincing: 13000
+                    - date: '2020-06-07'
+                      reservations: 14
+                      dayInvoincing: 14000
+                    - date: '2020-06-09'
+                      reservations: 30
+                      dayInvoincing: 15000
+                    - date: '2020-06-09'
+                      reservations: 30
+                      dayInvoincing: 16000
+                    - date: '2020-06-10'
+                      reservations: 30
+                      dayInvoincing: 17000
+                    - date: '2020-06-11'
+                      reservations: 30
+                      dayInvoincing: 18000
+                    - date: '2020-06-12'
+                      reservations: 30
+                      dayInvoincing: 19000
+                    - date: '2020-06-13'
+                      reservations: 30
+                      dayInvoincing: 20000
+                    - date: '2020-06-14'
+                      reservations: 30
+                      dayInvoincing: 20000
+                    - date: '2020-06-15'
+                      reservations: 30
+                      dayInvoincing: 21000
+                    - date: '2020-06-16'
+                      reservations: 30
+                      dayInvoincing: 22000
+                    - date: '2020-06-17'
+                      reservations: 30
+                      dayInvoincing: 23000
+                    - date: '2020-06-18'
+                      reservations: 30
+                      dayInvoincing: 24000
+                    - date: '2020-06-19'
+                      reservations: 30
+                      dayInvoincing: 25000
+                    - date: '2020-06-20'
+                      reservations: 30
+                      dayInvoincing: 26000
+                    - date: '2020-06-21'
+                      reservations: 30
+                      dayInvoincing: 27000
+                    - date: '2020-06-22'
+                      reservations: 30
+                      dayInvoincing: 28000
+                    - date: '2020-06-23'
+                      reservations: 30
+                      dayInvoincing: 29000
+                    - date: '2020-06-24'
+                      reservations: 30
+                      dayInvoincing: 30000
+                    - date: '2020-06-25'
+                      reservations: 30
+                      dayInvoincing: 23000
+                    - date: '2020-06-26'
+                      reservations: 30
+                      dayInvoincing: 24000
+                    - date: '2020-06-27'
+                      reservations: 30
+                      dayInvoincing: 25000
+                    - date: '2020-06-28'
+                      reservations: 30
+                      dayInvoincing: 20000
+                    - date: '2020-06-29'
+                      reservations: 30
+                      dayInvoincing: 21000
+                    - date: '2020-06-30'
+                      reservations: 30
+                      dayInvoincing: 22000
 components:
   schemas: {}
