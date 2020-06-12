@@ -303,7 +303,134 @@ paths:
                 - tourReservations
                 - invoincingSales
             examples:
-              Exemplo de como é o objeto do gráfico: {}
+              Exemplo de como é o objeto do gráfico:
+                value:
+                  data:
+                    - labels:
+                        - 28/04
+                        - 29/04
+                        - 30/04
+                        - 01/05
+                        - 02/05
+                        - 03/05
+                        - 04/05
+                        - 05/05
+                        - 06/05
+                        - 07/05
+                        - 08/05
+                        - 09/05
+                        - 10/05
+                        - 11/05
+                        - 12/05
+                        - 13/05
+                        - 14/05
+                        - 15/05
+                        - 16/05
+                        - 17/05
+                        - 18/05
+                        - 19/05
+                        - 20/05
+                        - 21/05
+                        - 22/05
+                        - 23/05
+                        - 24/05
+                        - 25/05
+                        - 26/05
+                        - 27/05
+                        - 28/05
+                        - 29/05
+                      datasets:
+                        - label: Periodo anterior (Abr 2018 - Mai 2019)
+                          lineTension: 0.1
+                          backgroundColor: 'rgba(241, 91, 43, 0.15)'
+                          borderColor: 'rgba(241, 91, 43, 1)'
+                          pointRadius: 3
+                          pointBackgroundColor: 'rgba(241, 91, 43, 1)'
+                          pointBorderColor: 'rgba(241, 91, 43, 1)'
+                          pointHoverRadius: 6
+                          pointHoverBackgroundColor: 'rgba(241, 91, 43, 1)'
+                          pointHoverBorderColor: 'rgba(241, 91, 43, 1)'
+                          pointHitRadius: 10
+                          pointBorderWidth: 2
+                          data:
+                            - 30000
+                            - 1000
+                            - 500
+                            - 25000
+                            - 1000
+                            - 2000
+                            - 30000
+                            - 14000
+                            - 2000
+                            - 3000
+                            - 12500
+                            - 15000
+                            - 11000
+                            - 1900
+                            - 15000
+                            - 1000
+                            - 2000
+                            - 8000
+                            - 14000
+                            - 2000
+                            - 3000
+                            - 2500
+                            - 8000
+                            - 1000
+                            - 500
+                            - 11000
+                            - 1000
+                            - 2000
+                            - 8000
+                            - 14000
+                            - 2000
+                            - 10000
+                        - label: Periodo atual (Abr 2018 - Mai 2019)
+                          lineTension: 0.1
+                          backgroundColor: 'rgba(78, 115, 223, 0.15)'
+                          borderColor: 'rgba(78, 115, 223, 1)'
+                          pointRadius: 3
+                          pointBackgroundColor: 'rgba(78, 115, 223, 1)'
+                          pointBorderColor: 'rgba(78, 115, 223, 1)'
+                          pointHoverRadius: 6
+                          pointHoverBackgroundColor: 'rgba(78, 115, 223, 1)'
+                          pointHoverBorderColor: 'rgba(78, 115, 223, 1)'
+                          pointHitRadius: 10
+                          pointBorderWidth: 2
+                          data:
+                            - 0
+                            - 10000
+                            - 5000
+                            - 15000
+                            - 10000
+                            - 20000
+                            - 15000
+                            - 25000
+                            - 20000
+                            - 30000
+                            - 25000
+                            - 40000
+                            - 35000
+                            - 25000
+                            - 29000
+                            - 32000
+                            - 29000
+                            - 30000
+                            - 35000
+                            - 35000
+                            - 39000
+                            - 42000
+                            - 39000
+                            - 34000
+                            - 35000
+                            - 35000
+                            - 39000
+                            - 42000
+                            - 49000
+                            - 44000
+                            - 52000
+                            - 59000
+                            - 60000
               'Objeto de exemplo que estou usando em /main-dashboar (exceto pelo gráfico, que são os dados do outro exemplo)':
                 value:
                   AllSuppliersReservations:
